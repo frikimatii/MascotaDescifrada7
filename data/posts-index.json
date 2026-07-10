@@ -43,5 +43,22 @@
     "alimentación",
     "comportamiento"
   ]
+},
+
+{
+  "id": 4,
+  "titulo": "¿Por qué mi perro tiembla? Causas normales y señales de alerta",
+  "slug": "por-que-mi-perro-tiembla",
+  "descripcion": "Descubre por qué tu perro tiembla, cuándo es algo normal y cuáles son las señales de alerta que indican que puede necesitar atención veterinaria.",
+  "categoria": "Salud",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-12",
+  "imagen": "https://i.postimg.cc/Qx2xqxGm/Cute-small-dog-sitting-home-202607100000.jpg",
+  "tags": [
+    "perros",
+    "salud",
+    "comportamiento",
+    "cuidados"
+  ]
 }
 ]
