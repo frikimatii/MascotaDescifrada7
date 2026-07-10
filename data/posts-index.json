@@ -142,6 +142,23 @@
     "adiestramiento",
     "cuidados"
   ]
+},
+
+{
+  "id": 10,
+  "titulo": "¿Por qué mi perro llora? Significados y qué hacer",
+  "slug": "por-que-mi-perro-llora",
+  "descripcion": "Descubre por qué tu perro llora, qué intenta comunicar con sus sonidos y cómo ayudarlo según la causa.",
+  "categoria": "Comportamiento",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-18",
+  "imagen": "https://i.postimg.cc/qgfkDGRZ/Adorable-dog-with-expressive-eyes-202607100146.jpg",
+  "tags": [
+    "perros",
+    "comportamiento",
+    "lenguaje canino",
+    "cuidados"
+  ]
 }
 
 
