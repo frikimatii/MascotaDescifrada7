@@ -27,6 +27,21 @@
     "comportamiento",
     "lenguaje canino"
   ]
+},
+  {
+  "id": 3,
+  "titulo": "¿Por qué mi perro come pasto? Descubre cuándo es normal y cuándo debes preocuparte",
+  "slug": "por-que-mi-perro-come-pasto",
+  "descripcion": "¿Tu perro come pasto durante los paseos? Descubre las causas más comunes, cuándo es un comportamiento normal y en qué casos deberías consultar con un veterinario.",
+  "categoria": "Salud",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-11",
+  "imagen": "https://i.postimg.cc/xCJKB180/Golden-Retriever-sniffing-green-202607092339.jpg",
+  "tags": [
+    "perros",
+    "salud",
+    "alimentación",
+    "comportamiento"
+  ]
 }
-  
 ]
