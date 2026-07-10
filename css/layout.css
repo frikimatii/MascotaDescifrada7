@@ -1,0 +1,117 @@
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+/* Header */
+.header {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: var(--space-sm) 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.header__logo-img {
+  height: 50px;
+  width: auto;
+  border-radius: var(--radius-sm);
+}
+
+.header__logo span {
+  color: var(--color-secondary);
+}
+
+.header__menu {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.header__menu-link {
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+.header__menu-link:hover {
+  color: var(--color-secondary);
+}
+
+.header__actions {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-lg) 0 var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.footer__col h4 {
+  color: var(--color-white);
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.footer__link:hover {
+  color: var(--color-secondary);
+}
+
+.footer__bottom {
+  text-align: center;
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+/* Main Layout Grid (Sidebar right) */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header__menu {
+    display: none; /* In a real app, we'd add a hamburger menu */
+  }
+}

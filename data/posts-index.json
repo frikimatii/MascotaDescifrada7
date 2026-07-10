@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "¿Por qué mi perro bosteza cuando lo acaricio? La señal que muchos dueños no entienden",
+    "slug": "por-que-mi-perro-bosteza-cuando-lo-acaricio",
+    "descripcion": "Descubre qué significa realmente cuando tu perro bosteza al recibir caricias y aprende a interpretar su lenguaje corporal.",
+    "categoria": "Comportamiento",
+    "tiempoLectura": "6 min",
+    "fecha": "2026-07-09",
+    "imagen": "https://i.postimg.cc/HnFZyMyF/Happy-dog-inicio.jpg",
+    "tags": [
+      "perros",
+      "comportamiento",
+      "lenguaje canino"
+    ]
+  },{
+  "id": 2,
+  "titulo": "¿Por qué mi perro mueve la cola? Descubre qué intenta decirte",
+  "slug": "por-que-mi-perro-mueve-la-cola",
+  "descripcion": "Aprende qué significa cuando tu perro mueve la cola y descubre cómo interpretar su lenguaje corporal.",
+  "categoria": "Perros",
+  "tiempoLectura": "4 min",
+  "fecha": "2026-07-10",
+  "imagen": "https://i.postimg.cc/FKJBhDk1/Happy-dog-with-wagging-tail-202607092111.jpg",
+  "tags": [
+    "perros",
+    "comportamiento",
+    "lenguaje canino"
+  ]
+}
+  
+]

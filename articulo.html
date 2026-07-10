@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo | +COTAS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__nav">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.jpeg" alt="+COTAS Logo" class="header__logo-img">
+            </a>
+            <nav class="header__menu">
+                <a href="categoria.html?cat=Perros" class="header__menu-link">Perros</a>
+                <a href="categoria.html?cat=Gatos" class="header__menu-link">Gatos</a>
+                <a href="categoria.html?cat=Comportamiento" class="header__menu-link">Comportamiento</a>
+            </nav>
+            <div class="header__actions">
+                <form id="search-form" class="search-bar">
+                    <input type="text" placeholder="Buscar..." required>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="layout-grid">
+            <div class="main-content" id="article-content">
+                <!-- El contenido del artículo se inyectará aquí vía JS -->
+                <p>Cargando artículo...</p>
+            </div>
+            <aside id="sidebar-container">
+                <!-- Sidebar -->
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <p>&copy; 2026 +COTAS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import 'variables.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'components.css';
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: var(--space-xl) var(--space-sm);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  margin: var(--space-md) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.section-title::before {
+  content: '';
+  width: 4px;
+  height: 32px;
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-pill);
+}
+
+/* Posts Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+/* Categories Section */
+.categories-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.category-pill {
+  background-color: var(--color-white);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.category-pill:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Article Content Styles */
+.article-header {
+  margin-bottom: var(--space-md);
+}
+
+.article-meta {
+  display: flex;
+  gap: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+.article-content h2, 
+.article-content h3 {
+  margin-top: var(--space-md);
+}
+
+.article-content p {
+  margin-bottom: var(--space-sm);
+  font-size: 1.1rem;
+}
+
+.article-content img {
+  border-radius: var(--radius-md);
+  margin: var(--space-sm) 0;
+}

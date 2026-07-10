@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | +COTAS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__nav">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.jpeg" alt="+COTAS Logo" class="header__logo-img">
+            </a>
+            <nav class="header__menu">
+                <a href="categoria.html?cat=Perros" class="header__menu-link">Perros</a>
+                <a href="categoria.html?cat=Gatos" class="header__menu-link">Gatos</a>
+                <a href="categoria.html?cat=Comportamiento" class="header__menu-link">Comportamiento</a>
+            </nav>
+            <div class="header__actions">
+                <form id="search-form" class="search-bar">
+                    <input type="text" placeholder="Buscar..." required>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 2rem;">
+        <h1 class="section-title">Contacto</h1>
+        <div style="max-width: 600px; line-height: 1.8; font-size: 1.1rem;">
+            <p>¿Tienes alguna duda, sugerencia o quieres colaborar con nosotros? Nos encantaría escucharte.</p>
+            
+            <form style="display:flex; flex-direction:column; gap:1rem; margin-top:2rem;">
+                <div>
+                    <label style="display:block; margin-bottom:0.5rem;">Nombre</label>
+                    <input type="text" style="width:100%; padding:0.8rem; border-radius:var(--radius-sm); border:1px solid var(--color-border);" required>
+                </div>
+                <div>
+                    <label style="display:block; margin-bottom:0.5rem;">Email</label>
+                    <input type="email" style="width:100%; padding:0.8rem; border-radius:var(--radius-sm); border:1px solid var(--color-border);" required>
+                </div>
+                <div>
+                    <label style="display:block; margin-bottom:0.5rem;">Mensaje</label>
+                    <textarea rows="5" style="width:100%; padding:0.8rem; border-radius:var(--radius-sm); border:1px solid var(--color-border); font-family:inherit;" required></textarea>
+                </div>
+                <button type="button" class="btn btn--primary" style="align-self:flex-start;">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

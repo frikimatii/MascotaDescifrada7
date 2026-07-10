@@ -1,0 +1,21 @@
+{
+  "name": "+COTAS - Entiende a tu mascota mejor, cada día.",
+  "short_name": "+COTAS",
+  "description": "Blog profesional sobre mascotas: perros, gatos, aves, reptiles, peces y más.",
+  "start_url": "/mascotas/index.html",
+  "display": "standalone",
+  "background_color": "#F5F5F5",
+  "theme_color": "#1E3557",
+  "icons": [
+    {
+      "src": "favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
