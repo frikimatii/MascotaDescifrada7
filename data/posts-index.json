@@ -109,6 +109,22 @@
     "cuidados",
     "comportamiento"
   ]
+},
+{
+  "id": 8,
+  "titulo": "¿Por qué mi perro no come? Causas y qué puedes hacer",
+  "slug": "por-que-mi-perro-no-come",
+  "descripcion": "Descubre por qué tu perro dejó de comer, las causas más comunes y qué puedes hacer para ayudarlo a recuperar el apetito.",
+  "categoria": "Salud",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-16",
+  "imagen": "https://i.postimg.cc/dVmfg939/Dog-sitting-beside-food-bowl-202607100116.jpg",
+  "tags": [
+    "perros",
+    "salud",
+    "alimentación",
+    "cuidados"
+  ]
 }
 
 
