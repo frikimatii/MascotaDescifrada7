@@ -69,12 +69,31 @@
   "categoria": "Comportamiento",
   "tiempoLectura": "6 min",
   "fecha": "2026-07-13",
-  "imagen": "https://i.postimg.cc/8C2zZp6s/Dog-looking-at-owner-2K-202607100021.jpg",
+  "imagen": "",
   "tags": [
     "perros",
     "comportamiento",
     "lenguaje canino",
     "cuidados"
   ]
+},
+
+{
+  "id": 6,
+  "titulo": "¿Por qué mi perro duerme tanto? ¿Es normal que pase tantas horas dormido?",
+  "slug": "por-que-mi-perro-duerme-tanto",
+  "descripcion": "Descubre por qué los perros duermen tantas horas, cuánto es normal según su edad y qué señales indican que puede existir un problema.",
+  "categoria": "Salud",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-14",
+  "imagen": "https://i.postimg.cc/5y61JDvZ/Cute-sleeping-dog-on-cushion-202607100038.jpg",
+  "tags": [
+    "perros",
+    "salud",
+    "comportamiento",
+    "cuidados"
+  ]
 }
+
+
 ]
