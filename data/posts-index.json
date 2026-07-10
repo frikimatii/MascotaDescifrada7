@@ -60,5 +60,21 @@
     "comportamiento",
     "cuidados"
   ]
+},
+{
+  "id": 5,
+  "titulo": "¿Por qué mi perro me sigue a todos lados? Descubre qué significa",
+  "slug": "por-que-mi-perro-me-sigue-a-todos-lados",
+  "descripcion": "Descubre por qué tu perro te sigue por toda la casa, si es una muestra de amor, apego o una señal de ansiedad.",
+  "categoria": "Comportamiento",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-13",
+  "imagen": "https://i.postimg.cc/8C2zZp6s/Dog-looking-at-owner-2K-202607100021.jpg",
+  "tags": [
+    "perros",
+    "comportamiento",
+    "lenguaje canino",
+    "cuidados"
+  ]
 }
 ]
