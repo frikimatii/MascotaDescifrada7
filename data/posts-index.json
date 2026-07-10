@@ -93,6 +93,22 @@
     "comportamiento",
     "cuidados"
   ]
+},
+{
+  "id": 7,
+  "titulo": "¿Por qué mi perro se lame las patas? Causas y cómo ayudarlo",
+  "slug": "por-que-mi-perro-se-lame-las-patas",
+  "descripcion": "Descubre por qué tu perro se lame las patas, las causas más comunes y cómo ayudarlo cuando este comportamiento aparece con frecuencia.",
+  "categoria": "Salud",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-15",
+  "imagen": "https://i.postimg.cc/2jGR9jpj/Dog-looking-at-paw-2K-202607100058.jpg",
+  "tags": [
+    "perros",
+    "salud",
+    "cuidados",
+    "comportamiento"
+  ]
 }
 
 
