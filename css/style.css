@@ -5,22 +5,82 @@
 
 /* Hero Section */
 .hero {
+  position: relative;
   text-align: center;
-  padding: var(--space-xl) var(--space-sm);
-  background-color: var(--color-white);
+  padding: 6rem 2rem;
   border-radius: var(--radius-lg);
   margin: var(--space-md) 0;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* Background image with subtle zoom animation */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  animation: heroZoom 20s infinite alternate linear;
+}
+
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* Gradient overlay for readability */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(30,53,87,0.85) 0%, rgba(242,140,40,0.6) 100%);
+  z-index: 1;
+}
+
+/* Glassmorphism content */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  max-width: 800px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .hero__title {
   font-size: 3rem;
   margin-bottom: var(--space-sm);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero__subtitle {
   font-size: 1.2rem;
-  color: var(--color-text-muted);
+  color: rgba(255,255,255,0.9);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -97,4 +157,36 @@
 .article-content img {
   border-radius: var(--radius-md);
   margin: var(--space-sm) 0;
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+    min-height: 300px;
+  }
+  
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .hero__content {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .article-header h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
 }

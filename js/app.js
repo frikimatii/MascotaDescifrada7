@@ -8,6 +8,7 @@ import SEO from './seo.js';
 
 const App = {
   async init() {
+    this.initTheme();
     Search.init();
     
     const path = window.location.pathname;
@@ -27,6 +28,35 @@ const App = {
     }
   },
 
+  initTheme() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn) return;
+
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggleBtn.textContent = '☀️';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggleBtn.textContent = '🌙';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        toggleBtn.textContent = '🌙';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        toggleBtn.textContent = '☀️';
+      }
+    });
+  },
+
   async loadSidebar() {
     const sidebarContainer = document.getElementById('sidebar-container');
     if (!sidebarContainer) return;
@@ -39,6 +69,9 @@ const App = {
   async loadHomePage() {
     const postsContainer = document.getElementById('latest-posts');
     if (!postsContainer) return;
+
+    // Show skeletons
+    postsContainer.innerHTML = Array(6).fill(Render.skeletonCard()).join('');
 
     const posts = await API.getPostsIndex();
     postsContainer.innerHTML = posts.map(post => Render.postCard(post)).join('');
@@ -65,15 +98,16 @@ const App = {
       return;
     }
 
-    // Update SEO
-    SEO.updateMeta(post.titulo, post.descripcion, post.imagen, window.location.href);
+    // Update SEO with new object format
+    SEO.updateMeta(post, window.location.href);
 
     // Render Article
     const contentContainer = document.getElementById('article-content');
     if (contentContainer) {
       let amazonHtml = '';
-      if (post.productosAmazon && post.productosAmazon.length > 0) {
-        amazonHtml = `<h3>Productos Recomendados</h3>` + post.productosAmazon.map(p => Render.amazonProduct(p)).join('');
+      const productos = post.amazon || post.productosAmazon;
+      if (productos && productos.length > 0) {
+        amazonHtml = `<h3>Productos Recomendados</h3>` + productos.map(p => Render.amazonProduct(p)).join('');
       }
 
       contentContainer.innerHTML = `
@@ -106,8 +140,11 @@ const App = {
     if (!catName || !titleEl || !container) return;
     
     titleEl.textContent = `Categoría: ${catName}`;
-    SEO.updateMeta(`Categoría: ${catName}`, `Artículos sobre ${catName}`, '', window.location.href);
+    SEO.updateMeta({ titulo: `Categoría: ${catName}`, descripcion: `Artículos sobre ${catName}`, imagen: '' }, window.location.href);
     
+    // Show skeleton
+    container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
+
     const posts = await API.getPostsIndex();
     const filtered = posts.filter(p => p.categoria === catName);
     
@@ -128,7 +165,10 @@ const App = {
     if (!query || !titleEl || !container) return;
     
     titleEl.textContent = `Resultados para: "${query}"`;
-    SEO.updateMeta(`Buscar: ${query}`, `Resultados de búsqueda para ${query}`, '', window.location.href);
+    SEO.updateMeta({ titulo: `Buscar: ${query}`, descripcion: `Resultados de búsqueda para ${query}`, imagen: '' }, window.location.href);
+
+    // Show skeleton
+    container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
 
     const results = await Search.performSearch(query);
     

@@ -3,9 +3,15 @@
  */
 
 const SEO = {
-  updateMeta(title, description, image, url) {
+  updateMeta(post, currentUrl) {
+    // Si viene el objeto SEO avanzado, úsalo, sino usa fallback básico
+    const title = post.seo?.metaTitle || `${post.titulo} | +COTAS`;
+    const description = post.seo?.metaDescription || post.descripcion;
+    const image = post.imagen;
+    const url = currentUrl;
+
     // Title
-    document.title = `${title} | +COTAS`;
+    document.title = title;
 
     // Metas básicas
     this.setMetaContent('name="description"', description);

@@ -6,32 +6,41 @@ const Render = {
   postCard(post) {
     return `
       <article class="card">
-        <a href="articulo.html?slug=${post.slug}">
+        <a href="articulo.html?slug=${post.slug}" aria-label="Leer artículo: ${post.titulo}">
           <img src="${post.imagen}" alt="${post.titulo}" class="card__image" loading="lazy">
         </a>
         <div class="card__content">
-          <a href="categoria.html?cat=${encodeURIComponent(post.categoria)}" class="card__tag">${post.categoria}</a>
+          <a href="categoria.html?cat=${encodeURIComponent(post.categoria)}" class="card__tag" aria-label="Categoría: ${post.categoria}">${post.categoria}</a>
           <h3 class="card__title">
             <a href="articulo.html?slug=${post.slug}">${post.titulo}</a>
           </h3>
           <p class="card__excerpt">${post.descripcion}</p>
           <div class="article-meta" style="margin-top: 1rem;">
-            <span>📅 ${post.fecha}</span>
-            <span>⏱️ ${post.tiempoLectura}</span>
+            <span aria-label="Fecha de publicación">📅 ${post.fecha}</span>
+            ${post.tiempoLectura ? `<span aria-label="Tiempo de lectura">⏱️ ${post.tiempoLectura}</span>` : ''}
           </div>
         </div>
       </article>
     `;
   },
 
+  skeletonCard() {
+    return `<div class="skeleton skeleton-card"></div>`;
+  },
+
   amazonProduct(product) {
+    // Soporte para formato legacy y nuevo
+    const imageUrl = product.imagen || 'https://via.placeholder.com/100x100?text=Amazon';
+    const title = product.titulo || product.nombre;
+    const desc = product.descripcionCorta || 'Descubre este producto en Amazon.';
+
     return `
       <div class="amazon-product">
-        <img src="${product.imagen}" alt="${product.nombre}" loading="lazy">
+        <img src="${imageUrl}" alt="${title}" loading="lazy">
         <div class="amazon-product__info">
-          <h4 class="amazon-product__title">${product.nombre}</h4>
-          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">${product.descripcionCorta}</p>
-          <a href="${product.url}" target="_blank" rel="nofollow noopener sponsored" class="btn btn--primary">Ver en Amazon</a>
+          <h4 class="amazon-product__title">${title}</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">${desc}</p>
+          <a href="${product.url}" target="_blank" rel="nofollow noopener sponsored" class="btn btn--primary" aria-label="Comprar ${title} en Amazon">Ver en Amazon</a>
         </div>
       </div>
     `;

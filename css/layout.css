@@ -111,7 +111,21 @@
     grid-template-columns: 1fr;
   }
   
+  .header__nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .header__menu {
-    display: none; /* In a real app, we'd add a hamburger menu */
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  .header__actions {
+    margin-left: auto;
   }
 }
