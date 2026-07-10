@@ -125,6 +125,23 @@
     "alimentación",
     "cuidados"
   ]
+},
+
+{
+  "id": 9,
+  "titulo": "¿Por qué mi perro ladra mucho? Causas y cómo enseñarle a controlarlo",
+  "slug": "por-que-mi-perro-ladra-mucho",
+  "descripcion": "Descubre por qué tu perro ladra demasiado, qué significa este comportamiento y cómo ayudarlo a controlar los ladridos.",
+  "categoria": "Comportamiento",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-17",
+  "imagen": "https://i.postimg.cc/5NJTgG9R/Dog-with-expressive-face-2K-202607100135.jpg ",
+  "tags": [
+    "perros",
+    "comportamiento",
+    "adiestramiento",
+    "cuidados"
+  ]
 }
 
 
