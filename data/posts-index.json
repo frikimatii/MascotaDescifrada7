@@ -159,6 +159,21 @@
     "lenguaje canino",
     "cuidados"
   ]
+},
+{
+  "id": 11,
+  "titulo": "¿Por qué mi gato amasa mantas? Descubre qué significa",
+  "slug": "por-que-mi-gato-amasa-mantas",
+  "descripcion": "Descubre por qué los gatos amasan mantas, qué significa este comportamiento y cuándo es completamente normal.",
+  "categoria": "Comportamiento",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-07-19",
+  "imagen": "https://i.postimg.cc/B665NVq5/Fluffy-orange-cat-kneading-blanket-202607102357.jpg",
+  "tags": [
+    "gatos",
+    "comportamiento",
+    "lenguaje felino"
+  ]
 }
 
 
