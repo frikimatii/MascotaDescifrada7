@@ -357,6 +357,21 @@
     "alimentación",
     "cuidados"
   ]
+},
+{
+  "id": 24,
+  "titulo": "¿Cuántas horas duerme un conejo? Descubre sus hábitos de sueño",
+  "slug": "cuantas-horas-duerme-un-conejo",
+  "descripcion": "Descubre cuánto duerme un conejo, sus horarios de descanso y cómo saber si sus hábitos de sueño son normales.",
+  "categoria": "Cuidados",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-01",
+  "imagen": "https://i.postimg.cc/pTZsjf01/Rabbit-sleeping-peacefully-cozy-202607140143.jpg",
+  "tags": [
+    "conejos",
+    "sueño",
+    "cuidados"
+  ]
 }
 
 ]
