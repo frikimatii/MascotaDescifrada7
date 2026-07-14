@@ -296,6 +296,21 @@
     "comportamiento",
     "curiosidades"
   ]
+},
+{
+  "id": 20,
+  "titulo": "¿Por qué mi gato mueve la cola? Aprende a interpretar su lenguaje",
+  "slug": "por-que-mi-gato-mueve-la-cola",
+  "descripcion": "Descubre qué significa cuando tu gato mueve la cola y aprende a interpretar su lenguaje corporal paso a paso.",
+  "categoria": "Comportamiento",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-07-28",
+  "imagen": "https://i.postimg.cc/CxpZpGKW/Fluffy-cat-looking-at-camera-202607140015.jpg",
+  "tags": [
+    "gatos",
+    "comportamiento",
+    "lenguaje corporal"
+  ]
 }
 
 
