@@ -342,6 +342,21 @@
     "salud",
     "alimentación"
   ]
+},
+{
+  "id": 23,
+  "titulo": "¿Qué puede comer un conejo? Guía completa de alimentación saludable",
+  "slug": "que-puede-comer-un-conejo-guia-alimentacion",
+  "descripcion": "Descubre qué alimentos puede comer un conejo, qué verduras son seguras y cómo crear una dieta saludable.",
+  "categoria": "Alimentación",
+  "tiempoLectura": "9 min",
+  "fecha": "2026-07-31",
+  "imagen": "https://i.postimg.cc/MHS9MsbR/Cute-rabbit-beside-healthy-food-202607140128.jpg",
+  "tags": [
+    "conejos",
+    "alimentación",
+    "cuidados"
+  ]
 }
 
 ]

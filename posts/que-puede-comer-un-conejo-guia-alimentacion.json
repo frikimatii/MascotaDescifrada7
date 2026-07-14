@@ -1,0 +1,53 @@
+{
+  "id": 23,
+  "titulo": "¿Qué puede comer un conejo? Guía completa de alimentación saludable",
+  "slug": "que-puede-comer-un-conejo-guia-alimentacion",
+  "categoria": "Alimentación",
+  "fecha": "2026-07-31",
+  "imagen": "https://i.postimg.cc/1t6WzxF7/Rabbit-eating-fresh-green-hay-202607140128.jpg",
+  "autor": "Admin",
+  "tiempoLectura": "9 min",
+  "destacado": true,
+  "descripcion": "Descubre qué puede comer un conejo, qué alimentos son seguros, cuáles debes evitar y cómo crear una alimentación equilibrada.",
+  "seo": {
+    "metaTitle": "¿Qué puede comer un conejo? Guía completa de alimentación saludable",
+    "metaDescription": "Aprende qué alimentos puede comer un conejo, qué verduras son seguras, qué evitar y cómo ofrecer una dieta equilibrada para mantenerlo sano.",
+    "keywordPrincipal": "que puede comer un conejo",
+    "keywords": [
+      "alimentación de conejos",
+      "comida para conejos",
+      "verduras que puede comer un conejo",
+      "frutas para conejos",
+      "qué darle de comer a un conejo",
+      "dieta saludable conejo",
+      "heno para conejos"
+    ]
+  },
+  "tags": [
+    "conejos",
+    "alimentación",
+    "cuidados",
+    "mascotas"
+  ],
+  "contenido": "<h2>¿Qué debe comer un conejo?</h2><p>Una alimentación correcta es una de las claves para que un conejo tenga una vida saludable. Aunque muchas personas piensan que solo comen zanahorias, su dieta debe estar basada principalmente en heno, acompañado de verduras frescas y otros alimentos adecuados.</p><h2>El alimento más importante: el heno</h2><p>El heno debe ser la base de la alimentación del conejo. Ayuda a mantener una buena digestión y favorece el desgaste natural de los dientes.</p><h2>Verduras que puede comer un conejo</h2><ul><li>Lechuga romana.</li><li>Perejil.</li><li>Albahaca.</li><li>Cilantro.</li><li>Espinaca en cantidades moderadas.</li><li>Hojas verdes variadas.</li></ul><h2>Frutas que puede comer ocasionalmente</h2><p>Las frutas deben ofrecerse como premio y en pequeñas cantidades.</p><ul><li>Manzana sin semillas.</li><li>Fresa.</li><li>Arándanos.</li><li>Plátano en pequeñas porciones.</li></ul><h2>Alimentos que debes evitar</h2><ul><li>Chocolate.</li><li>Pan y alimentos procesados.</li><li>Alimentos con azúcar.</li><li>Cebolla y ajo.</li><li>Comida para humanos.</li></ul><h2>¿Los conejos comen zanahoria?</h2><p>Sí, pero no debe ser el alimento principal. La zanahoria contiene azúcar y debe darse como un premio ocasional.</p><h2>Errores comunes en la alimentación</h2><ul><li>Dar demasiadas frutas.</li><li>No ofrecer suficiente heno.</li><li>Cambiar la dieta de forma brusca.</li><li>No proporcionar agua fresca.</li></ul><h2>Preguntas frecuentes</h2><h3>¿Cuántas veces al día come un conejo?</h3><p>Los conejos suelen comer pequeñas cantidades durante muchas horas del día.</p><h3>¿Puede un conejo comer solo pienso?</h3><p>No. El pienso debe complementar la dieta, pero no reemplazar el heno.</p><h2>Conclusión</h2><p>Una dieta basada en heno, verduras adecuadas, agua fresca y pequeñas cantidades de premios ayudará a mantener a tu conejo sano y feliz.</p>",
+  "productosAmazon": [
+    {
+      "nombre": "Timothy Hay Alimento para mascotas para conejos",
+      "descripcionCorta": "100% heno timothy natural.",
+      "url": "https://amzn.to/4wMfXg9",
+      "imagen": "https://i.postimg.cc/ZKXVpM5G/919Wue-QGXk-L-AC-SL1500.jpg"
+    },
+    {
+      "nombre": "Small Pet Select Gránulos de comida para conejos, 10 libras.",
+      "descripcionCorta": "Ideal para mantener la comida limpia y organizada.",
+      "url": "https://amzn.to/4fmLcYa",
+      "imagen": "https://i.postimg.cc/sxdNPfyy/81Qv-Vi-ZSAc-L-AC-SL1500.jpg"
+    },
+    {
+      "nombre": "Dispensador automático de agua para conejos",
+      "descripcionCorta": "Diseño de conservación de alimentos: este dispensador de agua para alimentos de conejillo de indias tiene un nuevo diseño de conservación de alimentos",
+      "url": "https://amzn.to/4yjnHrx",
+      "imagen": "https://i.postimg.cc/65ZdJ5BP/71b-6Fged-SL-AC-SL1500.jpg"
+    }
+  ]
+}
