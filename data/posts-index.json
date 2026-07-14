@@ -326,6 +326,22 @@
     "comportamiento",
     "binky"
   ]
+},
+
+{
+  "id": 22,
+  "titulo": "¿Por qué mi conejo no come? Causas, señales de alerta y qué hacer",
+  "slug": "por-que-mi-conejo-no-come",
+  "descripcion": "Descubre por qué un conejo puede dejar de comer, cuáles son las señales de alerta y cuándo debes buscar ayuda veterinaria.",
+  "categoria": "Salud",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-07-30",
+  "imagen": "https://i.postimg.cc/j59JmBmb/Rabbit-sitting-in-front-of-202607140111.jpg",
+  "tags": [
+    "conejos",
+    "salud",
+    "alimentación"
+  ]
 }
 
 ]

@@ -1,0 +1,47 @@
+{
+  "id": 22,
+  "titulo": "¿Por qué mi conejo no come? Causas, señales de alerta y qué hacer",
+  "slug": "por-que-mi-conejo-no-come",
+  "categoria": "Salud",
+  "fecha": "2026-07-30",
+  "imagen": "https://i.postimg.cc/cJF3Mvcx/Rabbit-sitting-beside-hay-vegeta-202607140110.jpg",
+  "autor": "Admin",
+  "tiempoLectura": "8 min",
+  "destacado": true,
+  "descripcion": "¿Tu conejo dejó de comer? Descubre las causas más comunes, cuándo puede ser una emergencia y qué pasos seguir para cuidar su salud.",
+  "seo": {
+    "metaTitle": "¿Por qué mi conejo no come? Causas, señales de alerta y qué hacer",
+    "metaDescription": "Descubre por qué un conejo puede dejar de comer, cuándo debes acudir al veterinario y cómo actuar rápidamente para proteger su salud.",
+    "keywordPrincipal": "por que mi conejo no come",
+    "keywords": [
+      "conejo no quiere comer",
+      "conejo dejó de comer",
+      "conejo sin apetito",
+      "salud de los conejos",
+      "estasis gastrointestinal conejo",
+      "cuidados del conejo",
+      "qué hacer si mi conejo no come"
+    ]
+  },
+  "tags": [
+    "conejos",
+    "salud",
+    "alimentación",
+    "cuidados"
+  ],
+  "contenido": "<h2>¿Es normal que un conejo deje de comer?</h2><p>No. Los conejos necesitan comer de forma constante para que su sistema digestivo funcione correctamente. Si deja de comer durante varias horas, puede ser una señal de un problema serio que requiere atención.</p><h2>Principales causas</h2><ul><li>Problemas dentales.</li><li>Estrés o cambios en el entorno.</li><li>Dolor.</li><li>Problemas digestivos como la estasis gastrointestinal.</li><li>Alimentación inadecuada.</li></ul><h2>Señales de alerta</h2><ul><li>No come ni bebe.</li><li>Produce pocas o ninguna bolita de heces.</li><li>Permanece quieto y sin energía.</li><li>Rechina los dientes por dolor.</li></ul><h2>¿Qué hacer?</h2><ol><li>Comprueba si sigue bebiendo agua.</li><li>Ofrécele heno fresco.</li><li>No lo fuerces a comer alimentos inadecuados.</li><li>Consulta con un veterinario especializado en animales exóticos si deja de comer o presenta otros síntomas.</li></ol><h2>Cómo prevenir este problema</h2><p>Una dieta rica en heno, agua fresca, ejercicio diario y revisiones veterinarias ayudan a mantener un sistema digestivo saludable.</p><h2>Preguntas frecuentes</h2><h3>¿Cuánto tiempo puede estar un conejo sin comer?</h3><p>Los conejos no deberían permanecer muchas horas sin comer. Si deja de alimentarse, conviene actuar cuanto antes y buscar atención veterinaria.</p><h3>¿Puedo darle frutas para estimular el apetito?</h3><p>Solo de forma ocasional y siguiendo las recomendaciones de un veterinario. El heno debe seguir siendo el alimento principal.</p><h2>Conclusión</h2><p>Si tu conejo deja de comer, no lo ignores. Observar rápidamente los síntomas y consultar a un veterinario cuando sea necesario puede marcar una gran diferencia para su salud.</p>",
+  "productosAmazon": [
+    {
+      "nombre": "Timothy Hay Alimento para mascotas para conejos",
+      "descripcionCorta": "100% heno timothy natural.",
+      "url": "https://amzn.to/4wMfXg9",
+      "imagen": "https://i.postimg.cc/ZKXVpM5G/919Wue-QGXk-L-AC-SL1500.jpg"
+    },
+    {
+      "nombre": "Dispensador automático de agua para conejos",
+      "descripcionCorta": "Diseño de conservación de alimentos: este dispensador de agua para alimentos de conejillo de indias tiene un nuevo diseño de conservación de alimentos",
+      "url": "https://amzn.to/4yjnHrx",
+      "imagen": "https://i.postimg.cc/65ZdJ5BP/71b-6Fged-SL-AC-SL1500.jpg"
+    }
+  ]
+}
