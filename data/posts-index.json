@@ -387,6 +387,21 @@
     "bienestar",
     "comportamiento"
   ]
+},
+{
+  "id": 26,
+  "titulo": "¿Por qué mi hámster corre tanto en la rueda? Descubre qué significa",
+  "slug": "por-que-mi-hamster-corre-tanto-en-la-rueda",
+  "descripcion": "Descubre por qué los hámsters corren tanto en la rueda, si es normal y cómo favorecer su bienestar.",
+  "categoria": "Comportamiento",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-03",
+  "imagen": "https://i.postimg.cc/mg0vkYDd/Golden-hamster-running-exercise-202607150016.jpg",
+  "tags": [
+    "hámster",
+    "comportamiento",
+    "ejercicio"
+  ]
 }
 
 ]
