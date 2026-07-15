@@ -1,0 +1,53 @@
+{
+  "id": 27,
+  "titulo": "¿Qué puede comer un hámster? Guía completa de alimentación saludable",
+  "slug": "que-puede-comer-un-hamster",
+  "categoria": "Alimentación",
+  "fecha": "2026-08-04",
+  "imagen": "https://i.postimg.cc/7ZYMDQ07/Hamster-sitting-with-hamster-food-202607150042.jpg",
+  "autor": "Admin",
+  "tiempoLectura": "9 min",
+  "destacado": true,
+  "descripcion": "Descubre qué puede comer un hámster, qué alimentos son seguros, cuáles debe evitar y cómo ofrecer una dieta equilibrada para mantenerlo sano y activo.",
+  "seo": {
+    "metaTitle": "¿Qué puede comer un hámster? Guía completa de alimentación saludable",
+    "metaDescription": "Aprende qué alimentos puede comer un hámster, cuáles son peligrosos y cómo crear una dieta saludable para cuidar su bienestar.",
+    "keywordPrincipal": "que puede comer un hamster",
+    "keywords": [
+      "alimentación del hámster",
+      "comida para hámster",
+      "qué frutas puede comer un hámster",
+      "qué verduras puede comer un hámster",
+      "alimentos prohibidos para hámster",
+      "dieta del hámster",
+      "cuidados del hámster"
+    ]
+  },
+  "tags": [
+    "hámster",
+    "alimentación",
+    "cuidados",
+    "salud"
+  ],
+  "contenido": "<h2>¿Qué puede comer un hámster?</h2><p>Los hámsters necesitan una alimentación variada y equilibrada. La base de su dieta debe ser un alimento específico para hámsters, complementado con pequeñas cantidades de verduras frescas y, de forma ocasional, algunas frutas.</p><h2>Alimentos recomendados</h2><ul><li>Mezcla específica para hámsters.</li><li>Brócoli.</li><li>Pepino.</li><li>Calabacín.</li><li>Zanahoria en pequeñas cantidades.</li><li>Manzana sin semillas.</li><li>Avena.</li></ul><h2>Alimentos que deben evitar</h2><ul><li>Chocolate.</li><li>Cebolla.</li><li>Ajo.</li><li>Alimentos salados.</li><li>Dulces.</li><li>Comida ultraprocesada.</li></ul><h2>¿Con qué frecuencia debe comer?</h2><p>Lo ideal es ofrecer alimento específico todos los días y complementar con pequeñas porciones de alimentos frescos varias veces por semana.</p><h2>¿Siempre debe tener agua?</h2><p>Sí. El agua limpia y fresca debe estar disponible en todo momento.</p><h2>Conclusión</h2><p>Una alimentación adecuada es una de las claves para que tu hámster tenga una vida larga, activa y saludable.</p>",
+  "productosAmazon": [
+    {
+      "nombre": "Abizoo Hámster & Gerbil Treat, Natural Health, Gourmet Hamster",
+      "descripcionCorta": "Alimentos secos",
+      "url": "https://amzn.to/3Tkesam",
+      "imagen": "https://i.postimg.cc/MHCbzW00/81Ah6072YNL-AC-SL1500.jpg"
+    },
+    {
+      "nombre": "Juego de hábitat de hámster de cerámica",
+      "descripcionCorta": "Resistente y fácil de limpiar.",
+      "url": "https://amzn.to/4fiTGiS",
+      "imagen": "Juego completo de hámster 3 en 1: incluye una casa de escondite de cerámica, una torre de botella de agua"
+    },
+    {
+      "nombre": "Botella de agua de hámster",
+      "descripcionCorta": "Diseño que ahorra espacio y es apto para mascotas: la estructura colgante suspendida evita que se vuelque",
+      "url": "https://amzn.to/4vrwUez",
+      "imagen": "https://i.postimg.cc/GmQ7xyJX/61Y9LRs-V-0L-AC-SL1500.jpg"
+    }
+  ]
+}

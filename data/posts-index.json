@@ -402,6 +402,21 @@
     "comportamiento",
     "ejercicio"
   ]
+},
+{
+  "id": 27,
+  "titulo": "¿Qué puede comer un hámster? Guía completa de alimentación saludable",
+  "slug": "que-puede-comer-un-hamster",
+  "descripcion": "Aprende qué alimentos son seguros para un hámster y cómo ofrecer una dieta saludable y equilibrada.",
+  "categoria": "Alimentación",
+  "tiempoLectura": "9 min",
+  "fecha": "2026-08-04",
+  "imagen": "https://i.postimg.cc/FRc0Dt5n/Hamster-surrounded-by-colorful-food-202607150042.jpg",
+  "tags": [
+    "hámster",
+    "alimentación",
+    "cuidados"
+  ]
 }
 
 ]
