@@ -1,0 +1,54 @@
+{
+  "id": 31,
+  "titulo": "¿Por qué mi perro come hierba en el parque? Descubre las verdaderas razones",
+  "slug": "por-que-mi-perro-come-hierba-en-el-parque",
+  "categoria": "Comportamiento",
+  "fecha": "2026-08-08",
+  "imagen": "https://i.postimg.cc/tJX2zfqQ/Golden-Retriever-eating-grass-park-202607211730.jpg",
+  "autor": "Admin",
+  "tiempoLectura": "7 min",
+  "destacado": true,
+  "descripcion": "¿Tu perro come hierba cuando salen al parque? Descubre por qué lo hace, cuándo es un comportamiento normal y en qué casos conviene consultar al veterinario.",
+  "seo": {
+    "metaTitle": "¿Por qué mi perro come hierba en el parque? Descubre las verdaderas razones",
+    "metaDescription": "Aprende por qué los perros comen hierba, si realmente lo hacen para purgarse y cuándo este comportamiento puede indicar un problema de salud.",
+    "keywordPrincipal": "por que mi perro come hierba",
+    "keywords": [
+      "perro come pasto",
+      "perro come hierba",
+      "por qué los perros comen césped",
+      "comportamiento canino",
+      "salud canina",
+      "alimentación del perro",
+      "curiosidades de perros"
+    ]
+  },
+  "tags": [
+    "perros",
+    "alimentación",
+    "comportamiento",
+    "salud",
+    "parque"
+  ],
+  "contenido": "<h2>¿Es normal que un perro coma hierba?</h2><p>Ver a un perro mordisqueando hierba durante un paseo es mucho más común de lo que parece. Aunque muchas personas creen que siempre lo hacen para provocarse el vómito, la realidad es mucho más compleja.</p><h2>No siempre buscan purgarse</h2><p>Algunos perros comen hierba sin presentar ningún problema digestivo. Diversos estudios indican que la mayoría de los perros que comen pasto no están enfermos ni vomitan después.</p><h2>¿Por qué lo hacen?</h2><ul><li>Les atrae la textura fresca de la hierba.</li><li>Obtienen un pequeño aporte de fibra.</li><li>Exploran el entorno utilizando la boca.</li><li>Algunos simplemente disfrutan del sabor.</li><li>Puede ser una forma de combatir el aburrimiento durante el paseo.</li></ul><h2>¿Cuándo debes preocuparte?</h2><p>Si tu perro come grandes cantidades de hierba, vomita repetidamente, presenta diarrea, pérdida de apetito o cambios en su comportamiento, conviene consultar con un veterinario para descartar problemas digestivos u otras enfermedades.</p><h2>¿Cómo evitar que lo haga?</h2><p>Una alimentación equilibrada, paseos enriquecidos, juegos de olfato y ejercicio diario ayudan a reducir este comportamiento cuando está relacionado con el aburrimiento.</p><h2>Conclusión</h2><p>En la mayoría de los casos, comer hierba es un comportamiento completamente normal. No siempre significa que tu perro esté enfermo; muchas veces simplemente está explorando, buscando fibra o disfrutando de una experiencia sensorial durante el paseo.</p>",
+  "productosAmazon": [
+    {
+      "nombre": "Alfombra olfativa para perros",
+      "descripcionCorta": "Estimula la mente y reduce el aburrimiento.",
+      "url": "",
+      "imagen": ""
+    },
+    {
+      "nombre": "Juguete interactivo para perros",
+      "descripcionCorta": "Ideal para mantener a tu perro entretenido y activo.",
+      "url": "",
+      "imagen": ""
+    },
+    {
+      "nombre": "Snack natural rico en fibra",
+      "descripcionCorta": "Complemento para una alimentación equilibrada.",
+      "url": "",
+      "imagen": ""
+    }
+  ]
+}
