@@ -5,29 +5,23 @@
 const API = {
 
   basePath: "/MascotaDescifrada7",
+  cache: {},
 
   async getPostsIndex() {
+    if (this.cache.postsIndex) return this.cache.postsIndex;
+    
     try {
-
-      const response = await fetch(
-        `${this.basePath}/data/posts-index.json`
-      );
-
-      if (!response.ok) {
-        throw new Error(
-          `Error cargando posts-index.json: ${response.status}`
-        );
-      }
-
-      return await response.json();
-
+      const response = await fetch(`${this.basePath}/data/posts-index.json`);
+      if (!response.ok) throw new Error('Network response was not ok');
+      const posts = await response.json();
+      
+      // Asegurar que siempre se muestren los más nuevos primero
+      posts.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+      
+      this.cache.postsIndex = posts;
+      return this.cache.postsIndex;
     } catch (error) {
-
-      console.error(
-        "Error fetching posts index:",
-        error
-      );
-
+      console.error('Error fetching posts index:', error);
       return [];
     }
   },
