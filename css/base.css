@@ -12,12 +12,34 @@ html {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: 'Poppins', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text-main);
   line-height: 1.6;
+  animation: fadeIn 0.5s ease-out;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary); 
 }
 
 h1, h2, h3, h4, h5, h6 {

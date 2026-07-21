@@ -128,6 +128,20 @@ const App = {
           </div>
         </div>
       `;
+
+      // Related articles logic
+      const postsIndex = await API.getPostsIndex();
+      const related = postsIndex.filter(p => p.categoria === post.categoria && p.slug !== post.slug).slice(0, 3);
+      
+      if (related.length > 0) {
+        contentContainer.innerHTML += `
+          <hr style="margin: 3rem 0; border: none; border-top: 1px solid rgba(0,0,0,0.1);">
+          <h3 style="margin-bottom: 1.5rem;">Artículos Relacionados</h3>
+          <div class="posts-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+            ${related.map(r => Render.postCard(r)).join('')}
+          </div>
+        `;
+      }
     }
   },
 
