@@ -1,0 +1,54 @@
+{
+  "id": 34,
+  "titulo": "¿Por qué mi perro persigue su propia cola? Descubre cuándo es normal y cuándo preocuparse",
+  "slug": "por-que-mi-perro-persigue-su-propia-cola",
+  "categoria": "Comportamiento",
+  "fecha": "2026-08-11",
+  "imagen": "https://i.postimg.cc/WzHmKRdF/Happy-Golden-Retriever-spinning-202607220003.jpg",
+  "autor": "Admin",
+  "tiempoLectura": "8 min",
+  "destacado": true,
+  "descripcion": "¿Tu perro da vueltas intentando atrapar su propia cola? Descubre por qué lo hace, cuándo es un simple juego y cuándo puede indicar ansiedad, aburrimiento o un problema de salud.",
+  "seo": {
+    "metaTitle": "¿Por qué mi perro persigue su propia cola? Descubre qué significa",
+    "metaDescription": "Aprende por qué los perros persiguen su cola, cuándo este comportamiento es normal y qué hacer si se vuelve repetitivo u obsesivo.",
+    "keywordPrincipal": "por que mi perro persigue su propia cola",
+    "keywords": [
+      "perro persigue su cola",
+      "por qué los perros giran en círculos",
+      "comportamiento canino",
+      "ansiedad en perros",
+      "aburrimiento en perros",
+      "picor en perros",
+      "curiosidades de perros"
+    ]
+  },
+  "tags": [
+    "perros",
+    "comportamiento",
+    "ansiedad",
+    "juego",
+    "salud canina"
+  ],
+  "contenido": "<h2>¿Es normal que un perro persiga su propia cola?</h2><p>Ver a un perro girando sobre sí mismo intentando atrapar su cola suele resultar divertido. En cachorros y perros jóvenes es un comportamiento completamente normal, ya que forma parte del juego y del descubrimiento de su propio cuerpo.</p><h2>¿Por qué lo hacen?</h2><p>Las razones pueden ser varias. Muchos perros lo hacen simplemente para jugar o liberar energía. Otros pueden perseguir su cola porque están aburridos, pasan demasiado tiempo solos o necesitan más ejercicio físico y estimulación mental.</p><h2>¿Puede indicar un problema?</h2><p>Sí. Si el comportamiento aparece de forma obsesiva, durante largos periodos o varias veces al día, puede estar relacionado con ansiedad, estrés o incluso con molestias físicas como picazón, alergias, pulgas o problemas en las glándulas anales.</p><h2>¿Cómo evitar que ocurra?</h2><ul><li>Aumenta el tiempo de paseo diario.</li><li>Realiza juegos de olfato y enriquecimiento ambiental.</li><li>Utiliza juguetes interactivos.</li><li>Dedica tiempo a jugar con tu perro.</li><li>Consulta al veterinario si el comportamiento aparece de forma repentina o es excesivo.</li></ul><h2>¿Cuándo acudir al veterinario?</h2><p>Si tu perro se lastima al perseguirse la cola, se muerde constantemente, pierde pelo en esa zona o el comportamiento se vuelve compulsivo, es importante realizar una revisión veterinaria.</p><h2>Conclusión</h2><p>Perseguir la cola suele ser un juego completamente normal, especialmente en cachorros. Sin embargo, cuando se convierte en una conducta repetitiva puede ser la forma en que tu perro intenta decirte que necesita más actividad, atención o una revisión de su salud.</p>",
+  "productosAmazon": [
+    {
+      "nombre": "Juguete interactivo para perros",
+      "descripcionCorta": "Ideal para reducir el aburrimiento y estimular la mente.",
+      "url": "",
+      "imagen": ""
+    },
+    {
+      "nombre": "Pelota dispensadora de premios",
+      "descripcionCorta": "Favorece el ejercicio y el entretenimiento.",
+      "url": "",
+      "imagen": ""
+    },
+    {
+      "nombre": "Alfombra olfativa para perros",
+      "descripcionCorta": "Perfecta para reducir el estrés y aumentar la estimulación mental.",
+      "url": "",
+      "imagen": ""
+    }
+  ]
+}
