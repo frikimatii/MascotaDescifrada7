@@ -521,6 +521,21 @@
     "comportamiento",
     "ansiedad"
   ]
+},
+{
+  "id": 35,
+  "titulo": "¿Por qué mi perro ladra cuando alguien llega disfrazado?",
+  "slug": "por-que-mi-perro-ladra-cuando-alguien-llega-disfrazado",
+  "descripcion": "Descubre por qué algunos perros se asustan o ladran cuando ven personas disfrazadas durante Halloween.",
+  "categoria": "Perros",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-13",
+  "imagen": "https://i.postimg.cc/bJVSR5r5/Golden-Retriever-barking-at-costume-202608131803.jpg",
+  "tags": [
+    "perros",
+    "Halloween",
+    "comportamiento canino",
+    "miedo"
+  ]
 }
-
 ]
