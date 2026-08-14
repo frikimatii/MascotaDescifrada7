@@ -537,5 +537,22 @@
     "comportamiento canino",
     "miedo"
   ]
+},
+
+{
+  "id": 36,
+  "titulo": "¿Por qué tu perro se asusta tanto con las máscaras?",
+  "slug": "por-que-tu-perro-se-asusta-con-las-mascaras",
+  "descripcion": "Descubre por qué algunos perros tienen miedo de las máscaras y cómo ayudarlos a sentirse seguros durante Halloween.",
+  "categoria": "Perros",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-14",
+  "imagen": "https://i.postimg.cc/7ZPHmpY7/Dog-looking-at-masked-person-202608140040.jpg",
+  "tags": [
+    "perros",
+    "Halloween",
+    "miedo",
+    "comportamiento canino"
+  ]
 }
 ]
