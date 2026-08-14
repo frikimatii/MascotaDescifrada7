@@ -554,5 +554,22 @@
     "miedo",
     "comportamiento canino"
   ]
+},
+
+{
+  "id": 37,
+  "titulo": "¿Por qué tu perro no te reconoce cuando te disfrazas?",
+  "slug": "por-que-tu-perro-no-te-reconoce-cuando-te-disfrazas",
+  "descripcion": "Descubre por qué tu perro puede confundirse cuando te disfrazas y cómo utiliza el olor, la voz y los movimientos para reconocerte.",
+  "categoria": "Perros",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-14",
+  "imagen": "https://i.postimg.cc/D0ZVqKcQ/Dog-looking-at-costumed-owner-202608140059.jpg",
+  "tags": [
+    "perros",
+    "Halloween",
+    "disfraces",
+    "comportamiento canino"
+  ]
 }
 ]
