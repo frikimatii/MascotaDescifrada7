@@ -56,6 +56,11 @@
   color: var(--color-secondary);
 }
 
+.header__menu-link[aria-current="page"] {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
 .header__actions {
   display: flex;
   gap: var(--space-sm);

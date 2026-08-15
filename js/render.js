@@ -54,6 +54,12 @@ const Render = {
     `;
   },
 
+  navLinks(categories) {
+    return categories.map(category => `
+      <a href="categoria.html?cat=${encodeURIComponent(category)}" class="header__menu-link">${category}</a>
+    `).join('');
+  },
+
   sidebar(recentPosts, categories) {
     let html = `<div class="sidebar">`;
     

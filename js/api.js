@@ -2,6 +2,17 @@
  * api.js - Módulo para manejar las peticiones de datos
  */
 
+const ANIMAL_TYPES = {
+  Perros: ['perros'],
+  Gatos: ['gatos'],
+  Conejos: ['conejos'],
+  Hámsters: ['hámster', 'hámsters'],
+};
+
+const NAV_ORDER = ['Perros', 'Gatos', 'Conejos', 'Hámsters', 'Aves', 'Reptiles', 'Peces'];
+
+const TOPIC_ORDER = ['Comportamiento', 'Salud', 'Alimentación', 'Cuidados', 'Perros', 'Hámsters'];
+
 const API = {
 
   basePath: "/MascotaDescifrada7",
@@ -62,17 +73,38 @@ const API = {
   },
 
 
-  async getCategories(){
+  postMatchesAnimal(post, animalLabel) {
+    const tags = ANIMAL_TYPES[animalLabel];
+    if (!tags || !post.tags) return false;
+    return post.tags.some(tag => tags.includes(tag.toLowerCase()));
+  },
 
+  async getNavCategories() {
     const posts = await this.getPostsIndex();
-
-    const categories = new Set(
-      posts.map(post => post.categoria)
+    return NAV_ORDER.filter(label =>
+      posts.some(post => this.postMatchesAnimal(post, label))
     );
+  },
 
+  filterPostsByCategory(catName, posts) {
+    if (ANIMAL_TYPES[catName]) {
+      return posts.filter(post => this.postMatchesAnimal(post, catName));
+    }
+    return posts.filter(post => post.categoria === catName);
+  },
 
-    return Array.from(categories);
+  async getCategories() {
+    const posts = await this.getPostsIndex();
+    const categories = [...new Set(posts.map(post => post.categoria))];
 
+    return categories.sort((a, b) => {
+      const indexA = TOPIC_ORDER.indexOf(a);
+      const indexB = TOPIC_ORDER.indexOf(b);
+      if (indexA === -1 && indexB === -1) return a.localeCompare(b, 'es');
+      if (indexA === -1) return 1;
+      if (indexB === -1) return -1;
+      return indexA - indexB;
+    });
   }
 
 };

@@ -10,9 +10,10 @@ const App = {
   async init() {
     this.initTheme();
     Search.init();
-    
+    await this.loadHeaderNav();
+
     const path = window.location.pathname;
-    
+
     // Load common Sidebar if exists
     await this.loadSidebar();
 
@@ -55,6 +56,23 @@ const App = {
         toggleBtn.textContent = '☀️';
       }
     });
+  },
+
+  async loadHeaderNav() {
+    const nav = document.getElementById('header-nav');
+    if (!nav) return;
+
+    const categories = await API.getNavCategories();
+    nav.innerHTML = Render.navLinks(categories);
+
+    const currentCat = new URLSearchParams(window.location.search).get('cat');
+    if (currentCat) {
+      nav.querySelectorAll('.header__menu-link').forEach(link => {
+        if (link.textContent === currentCat) {
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    }
   },
 
   async loadSidebar() {
@@ -160,7 +178,7 @@ const App = {
     container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
 
     const posts = await API.getPostsIndex();
-    const filtered = posts.filter(p => p.categoria === catName);
+    const filtered = API.filterPostsByCategory(catName, posts);
     
     if(filtered.length === 0){
       container.innerHTML = '<p>No hay artículos en esta categoría aún.</p>';
