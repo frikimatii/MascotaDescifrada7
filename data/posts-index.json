@@ -587,5 +587,21 @@
     "curiosidades",
     "misterios felinos"
   ]
+},
+{
+  "id": 39,
+  "titulo": "¿Por qué mi gato corre después de usar el arenero?",
+  "slug": "por-que-mi-gato-corre-despues-de-usar-el-arenero",
+  "descripcion": "Descubre por qué algunos gatos salen corriendo después de usar el arenero y qué significan los famosos zoomies felinos.",
+  "categoria": "Gatos",
+  "tiempoLectura": "6 min",
+  "fecha": "2026-08-16",
+  "imagen": "https://i.postimg.cc/5Nh6SLZk/Orange-tabby-cat-running-202608160314.jpg",
+  "tags": [
+    "gatos",
+    "zoomies",
+    "arenero",
+    "comportamiento felino"
+  ]
 }
 ]
