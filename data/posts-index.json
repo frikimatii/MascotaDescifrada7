@@ -571,5 +571,21 @@
     "disfraces",
     "comportamiento canino"
   ]
+},
+{
+  "id": 38,
+  "titulo": "¿Por qué mi gato tira cosas al suelo y se queda mirándolas?",
+  "slug": "por-que-mi-gato-tira-cosas-al-suelo-y-se-queda-mirandolas",
+  "descripcion": "Descubre por qué los gatos tiran objetos al suelo y qué relación tiene este comportamiento con su curiosidad, instinto de caza y búsqueda de atención.",
+  "categoria": "Gatos",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-16",
+  "imagen": "https://i.postimg.cc/JhRvfYf7/Cat-looking-down-from-table-202608160258.jpg",
+  "tags": [
+    "gatos",
+    "comportamiento felino",
+    "curiosidades",
+    "misterios felinos"
+  ]
 }
 ]
