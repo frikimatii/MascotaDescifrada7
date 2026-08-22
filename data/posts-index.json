@@ -620,5 +620,22 @@
     "juguetes para perros",
     "educación canina"
   ]
+},
+{
+  "id": 41,
+  "titulo": "Los 7 mejores juguetes para perros que destruyen todo",
+  "slug": "los-7-mejores-juguetes-para-perros-que-destruyen-todo",
+  "descripcion": "Descubre qué tipos de juguetes resistentes e interactivos pueden ser adecuados para perros que destruyen todo y qué mirar antes de comprar.",
+  "categoria": "Perros",
+  "tiempoLectura": "9 min",
+  "fecha": "2026-08-21",
+  "imagen": "https://i.postimg.cc/fWc441CN/Dog-playing-with-chew-toy-202608212353.jpg",
+  "tags": [
+    "perros",
+    "juguetes para perros",
+    "mordedores",
+    "juguetes resistentes",
+    "compras para mascotas"
+  ]
 }
 ]
