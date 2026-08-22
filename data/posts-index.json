@@ -603,5 +603,22 @@
     "arenero",
     "comportamiento felino"
   ]
+},
+{
+  "id": 40,
+  "titulo": "¿Tu perro destruye los muebles? 7 formas de evitarlo",
+  "slug": "tu-perro-destruye-los-muebles-7-formas-de-evitarlo",
+  "descripcion": "Descubre por qué tu perro muerde los muebles y 7 formas prácticas de redirigir esa conducta hacia alternativas más adecuadas.",
+  "categoria": "Perros",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-21",
+  "imagen": "https://i.postimg.cc/sXMPrF77/Dog-holding-chew-toy-202608212319.jpg",
+  "tags": [
+    "perros",
+    "comportamiento canino",
+    "masticación",
+    "juguetes para perros",
+    "educación canina"
+  ]
 }
 ]
