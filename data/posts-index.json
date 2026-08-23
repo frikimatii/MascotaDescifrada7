@@ -637,5 +637,21 @@
     "juguetes resistentes",
     "compras para mascotas"
   ]
+},
+{
+  "id": 42,
+  "titulo": "¿Tu perro come demasiado rápido? 5 soluciones que podés probar",
+  "slug": "tu-perro-come-demasiado-rapido-5-soluciones",
+  "descripcion": "Descubrí por qué algunos perros comen demasiado rápido y 5 soluciones prácticas para conseguir comidas más lentas y tranquilas.",
+  "categoria": "Perros",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-23",
+  "imagen": "https://i.postimg.cc/7hnScMJk/Dog-eating-from-bowl-202608231710.jpg",
+  "tags": [
+    "perros",
+    "alimentación canina",
+    "comedero antivoracidad",
+    "cuidados para perros"
+  ]
 }
 ]
