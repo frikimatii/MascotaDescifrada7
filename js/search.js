@@ -19,14 +19,14 @@ const Search = {
 
   async performSearch(query) {
     const posts = await API.getPostsIndex();
-    const lowerQuery = query.toLowerCase();
-    
+    const lowerQuery = query.trim().toLowerCase();
+
     return posts.filter(post => {
       return (
         post.titulo.toLowerCase().includes(lowerQuery) ||
         post.descripcion.toLowerCase().includes(lowerQuery) ||
         post.categoria.toLowerCase().includes(lowerQuery) ||
-        post.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
+        (post.tags || []).some(tag => tag.toLowerCase().includes(lowerQuery))
       );
     });
   }

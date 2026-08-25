@@ -7,7 +7,7 @@ const Render = {
     return `
       <article class="card">
         <a href="articulo.html?slug=${post.slug}" aria-label="Leer artículo: ${post.titulo}">
-          <img src="${post.imagen}" alt="${post.titulo}" class="card__image" loading="lazy">
+          <img src="${post.imagen}" alt="${post.titulo}" class="card__image" loading="lazy" decoding="async">
         </a>
         <div class="card__content">
           <a href="categoria.html?cat=${encodeURIComponent(post.categoria)}" class="card__tag" aria-label="Categoría: ${post.categoria}">${post.categoria}</a>
@@ -45,7 +45,7 @@ const Render = {
       </div>
     `;
   },
-  
+
   categoryPill(category) {
     return `
       <a href="categoria.html?cat=${encodeURIComponent(category)}" class="category-pill">
@@ -62,7 +62,7 @@ const Render = {
 
   sidebar(recentPosts, categories) {
     let html = `<div class="sidebar">`;
-    
+
     html += `<h3>Categorías</h3><div class="categories-flex" style="margin-bottom: 2rem;">`;
     categories.forEach(cat => {
       html += this.categoryPill(cat);

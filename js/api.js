@@ -19,57 +19,42 @@ const API = {
   cache: {},
 
   async getPostsIndex() {
-    if (this.cache.postsIndex) return this.cache.postsIndex;
-    
-    try {
-      const response = await fetch(`${this.basePath}/data/posts-index.json`);
-      if (!response.ok) throw new Error('Network response was not ok');
-      const posts = await response.json();
-      
-      // Asegurar que siempre se muestren los más nuevos primero
-      posts.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-      
-      this.cache.postsIndex = posts;
-      return this.cache.postsIndex;
-    } catch (error) {
-      console.error('Error fetching posts index:', error);
-      return [];
+    if (!this.cache.postsIndex) {
+      this.cache.postsIndex = fetch(`${this.basePath}/data/posts-index.json`)
+        .then(response => {
+          if (!response.ok) throw new Error('Network response was not ok');
+          return response.json();
+        })
+        .then(posts => {
+          posts.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+          return posts;
+        })
+        .catch(error => {
+          console.error('Error fetching posts index:', error);
+          delete this.cache.postsIndex;
+          return [];
+        });
     }
+
+    return this.cache.postsIndex;
   },
 
-
   async getPostBySlug(slug) {
-
-    try {
-
-      const response = await fetch(
-        `${this.basePath}/posts/${slug}.json`
-      );
-
-
-      if (!response.ok) {
-
-        throw new Error(
-          `Post no encontrado: ${slug}`
-        );
-
-      }
-
-
-      return await response.json();
-
-
-    } catch(error) {
-
-      console.error(
-        `Error fetching post ${slug}:`,
-        error
-      );
-
-      return null;
-
+    this.cache.posts = this.cache.posts || {};
+    if (!this.cache.posts[slug]) {
+      this.cache.posts[slug] = fetch(`${this.basePath}/posts/${slug}.json`)
+        .then(response => {
+          if (!response.ok) throw new Error(`Post no encontrado: ${slug}`);
+          return response.json();
+        })
+        .catch(error => {
+          console.error(`Error fetching post ${slug}:`, error);
+          delete this.cache.posts[slug];
+          return null;
+        });
     }
 
+    return this.cache.posts[slug];
   },
 
 

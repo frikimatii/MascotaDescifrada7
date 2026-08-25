@@ -10,23 +10,23 @@ const App = {
   async init() {
     this.initTheme();
     Search.init();
-    await this.loadHeaderNav();
 
     const path = window.location.pathname;
-
-    // Load common Sidebar if exists
-    await this.loadSidebar();
+    let pageLoader = this.loadHomePage;
 
     if (path.includes('articulo.html')) {
-      await this.loadArticlePage();
+      pageLoader = this.loadArticlePage;
     } else if (path.includes('categoria.html')) {
-      await this.loadCategoryPage();
+      pageLoader = this.loadCategoryPage;
     } else if (path.includes('buscar.html')) {
-      await this.loadSearchPage();
-    } else {
-      // Assuming index.html or root
-      await this.loadHomePage();
+      pageLoader = this.loadSearchPage;
     }
+
+    await Promise.all([
+      this.loadHeaderNav(),
+      this.loadSidebar(),
+      pageLoader.call(this)
+    ]);
   },
 
   initTheme() {
@@ -35,7 +35,7 @@ const App = {
 
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       document.documentElement.setAttribute('data-theme', 'dark');
       toggleBtn.textContent = '☀️';
@@ -93,7 +93,7 @@ const App = {
 
     const posts = await API.getPostsIndex();
     postsContainer.innerHTML = posts.map(post => Render.postCard(post)).join('');
-    
+
     const categoriesContainer = document.getElementById('home-categories');
     if (categoriesContainer) {
       const categories = await API.getCategories();
@@ -104,7 +104,7 @@ const App = {
   async loadArticlePage() {
     const urlParams = new URLSearchParams(window.location.search);
     const slug = urlParams.get('slug');
-    
+
     if (!slug) {
       window.location.href = '404.html';
       return;
@@ -150,7 +150,7 @@ const App = {
       // Related articles logic
       const postsIndex = await API.getPostsIndex();
       const related = postsIndex.filter(p => p.categoria === post.categoria && p.slug !== post.slug).slice(0, 3);
-      
+
       if (related.length > 0) {
         contentContainer.innerHTML += `
           <hr style="margin: 3rem 0; border: none; border-top: 1px solid rgba(0,0,0,0.1);">
@@ -168,23 +168,23 @@ const App = {
     const catName = urlParams.get('cat');
     const titleEl = document.getElementById('category-title');
     const container = document.getElementById('category-posts');
-    
+
     if (!catName || !titleEl || !container) return;
-    
+
     titleEl.textContent = `Categoría: ${catName}`;
     SEO.updateMeta({ titulo: `Categoría: ${catName}`, descripcion: `Artículos sobre ${catName}`, imagen: '' }, window.location.href);
-    
+
     // Show skeleton
     container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
 
     const posts = await API.getPostsIndex();
     const filtered = API.filterPostsByCategory(catName, posts);
-    
-    if(filtered.length === 0){
+
+    if (filtered.length === 0) {
       container.innerHTML = '<p>No hay artículos en esta categoría aún.</p>';
       return;
     }
-    
+
     container.innerHTML = filtered.map(post => Render.postCard(post)).join('');
   },
 
@@ -193,9 +193,9 @@ const App = {
     const query = urlParams.get('q');
     const titleEl = document.getElementById('search-title');
     const container = document.getElementById('search-results');
-    
+
     if (!query || !titleEl || !container) return;
-    
+
     titleEl.textContent = `Resultados para: "${query}"`;
     SEO.updateMeta({ titulo: `Buscar: ${query}`, descripcion: `Resultados de búsqueda para ${query}`, imagen: '' }, window.location.href);
 
@@ -203,12 +203,12 @@ const App = {
     container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
 
     const results = await Search.performSearch(query);
-    
-    if(results.length === 0){
+
+    if (results.length === 0) {
       container.innerHTML = '<p>No se encontraron resultados. Intenta con otra palabra.</p>';
       return;
     }
-    
+
     container.innerHTML = results.map(post => Render.postCard(post)).join('');
   }
 };
