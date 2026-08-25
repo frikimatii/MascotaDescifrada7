@@ -670,5 +670,22 @@
     "Perros destructores",
     "Mordedores"
   ]
+},
+{
+  "id": 44,
+  "titulo": "¿Tu perro tira de la correa? 7 consejos para lograr paseos más tranquilos",
+  "slug": "perro-tira-de-la-correa-consejos-paseos",
+  "descripcion": "Descubrí por qué tu perro tira de la correa y 7 consejos prácticos para conseguir paseos más tranquilos y agradables.",
+  "categoria": "Perros",
+  "tiempoLectura": "7 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/PJGzRc0R/perro-paseo-correa-tranquilo-home.jpg",
+  "tags": [
+    "Perros",
+    "Paseos",
+    "Correa",
+    "Adiestramiento",
+    "Arnés para perros"
+  ]
 }
 ]
