@@ -687,5 +687,22 @@
     "Adiestramiento",
     "Arnés para perros"
   ]
+},
+{
+  "id": 45,
+  "titulo": "¿Qué arnés elegir si tu perro tira mucho? Guía para elegir el adecuado",
+  "slug": "que-arnes-elegir-perro-tira-mucho",
+  "descripcion": "Descubrí qué arnés elegir si tu perro tira mucho, qué características mirar y cómo conseguir un ajuste cómodo y seguro.",
+  "categoria": "Perros",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/SxDK1MHV/arnes-antitirones-perro-paseo-home.jpg",
+  "tags": [
+    "Perros",
+    "Arneses",
+    "Paseos",
+    "Perros que tiran",
+    "Accesorios para perros"
+  ]
 }
 ]
