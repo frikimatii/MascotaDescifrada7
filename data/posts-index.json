@@ -755,5 +755,22 @@
     "Comportamiento felino",
     "Juguetes para gatos"
   ]
+},
+{
+  "id": 50,
+  "titulo": "¿Cómo evitar que tu perro o gato se escape? Guía para protegerlo",
+  "slug": "como-evitar-perro-gato-escape-guia-seguridad",
+  "descripcion": "Aprendé cómo reducir el riesgo de escapes durante paseos, mudanzas y descuidos cotidianos con medidas sencillas de prevención.",
+  "categoria": "Seguridad",
+  "tiempoLectura": "9 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/HsLNbzr7/Perro-y-gato-en-hogar-202608251703.jpg",
+  "tags": [
+    "Seguridad",
+    "Perros",
+    "Gatos",
+    "Prevención",
+    "Mascotas perdidas"
+  ]
 }
 ]
