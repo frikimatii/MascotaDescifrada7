@@ -738,5 +738,22 @@
     "Arena para gatos",
     "Cuidado de gatos"
   ]
+},
+{
+  "id": 49,
+  "titulo": "¿Tu gato duerme demasiado o se ve aburrido? 10 ideas para entretenerlo",
+  "slug": "como-entretener-gato-aburrido-10-ideas",
+  "descripcion": "Descubrí 10 ideas sencillas para estimular a tu gato, combatir el aburrimiento y enriquecer su rutina.",
+  "categoria": "Gatos",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/kgnkYCYd/Gato-explorando-juguetes-en-hogar-202608251637.jpg",
+  "tags": [
+    "Gatos",
+    "Enriquecimiento felino",
+    "Juegos para gatos",
+    "Comportamiento felino",
+    "Juguetes para gatos"
+  ]
 }
 ]
