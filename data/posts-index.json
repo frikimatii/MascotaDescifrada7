@@ -704,5 +704,22 @@
     "Perros que tiran",
     "Accesorios para perros"
   ]
+},
+{
+  "id": 46,
+  "titulo": "¿Tu gato está destrozando tus sillones? 7 formas de redirigir el rascado",
+  "slug": "gato-destroza-sillones-como-evitar-que-rasque",
+  "descripcion": "Descubrí por qué tu gato araña los sillones y cómo redirigir el rascado hacia un lugar adecuado sin castigos.",
+  "categoria": "Gatos",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/x1R5dn4P/gato-rascador-proteger-sillon-home.jpg",
+  "tags": [
+    "Gatos",
+    "Rascadores",
+    "Comportamiento felino",
+    "Gatos y muebles",
+    "Cuidado de gatos"
+  ]
 }
 ]
