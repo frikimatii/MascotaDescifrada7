@@ -772,5 +772,22 @@
     "Prevención",
     "Mascotas perdidas"
   ]
+},
+{
+  "id": 51,
+  "titulo": "¿Tu perro se queda solo y empieza a romper todo? 7 formas de mantenerlo entretenido",
+  "slug": "como-entretener-perro-solo-casa-rompe-cosas",
+  "descripcion": "Descubrí 7 formas de mantener entretenido a tu perro cuando se queda solo y reducir el aburrimiento y la destrucción de objetos.",
+  "categoria": "Perros",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/FHSZmDrx/Dog-playing-with-interactive-toy-202608252328-(1).jpg",
+  "tags": [
+    "Perros",
+    "Comportamiento canino",
+    "Juegos para perros",
+    "Enriquecimiento canino",
+    "Juguetes para perros"
+  ]
 }
 ]
