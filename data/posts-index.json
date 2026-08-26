@@ -789,5 +789,22 @@
     "Enriquecimiento canino",
     "Juguetes para perros"
   ]
+},
+{
+  "id": 52,
+  "titulo": "¿Tu gato se aburre aunque tenga juguetes? 7 señales de que necesita más estímulos",
+  "slug": "senales-gato-aburrido-necesita-estimulacion",
+  "descripcion": "Descubrí 7 señales de que tu gato puede necesitar más estimulación y cómo enriquecer su ambiente de forma sencilla.",
+  "categoria": "Gatos",
+  "tiempoLectura": "8 min",
+  "fecha": "2026-08-25",
+  "imagen": "https://i.postimg.cc/yYHQdM54/Gato-mirando-rascador-en-casa-202608252347.jpg",
+  "tags": [
+    "Gatos",
+    "Aburrimiento felino",
+    "Enriquecimiento ambiental",
+    "Juegos para gatos",
+    "Comportamiento felino"
+  ]
 }
 ]
