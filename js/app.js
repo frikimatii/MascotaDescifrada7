@@ -184,10 +184,8 @@ const App = {
         </div>
         <div class="article-content" style="font-size: 1.1rem; line-height: 1.8;">
           ${post.contenido}
-          <div style="margin-top: 2rem;">
-            ${amazonHtml}
-          </div>
         </div>
+        ${amazonHtml}
       `;
 
       // Related articles logic
