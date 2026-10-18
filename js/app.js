@@ -100,7 +100,9 @@ const App = {
       const html = batch.map(post => Render.postCard(post)).join('');
       if (offset === 0) {
         postsContainer.innerHTML = html;
-        // Append sentinel for infinite scroll
+                  // Append sentinel for infinite scroll
+          // Load categories after first batch
+          this.loadHomeCategories();
         const sentinel = document.createElement('div');
         sentinel.id = 'infinite-sentinel';
         postsContainer.parentElement.appendChild(sentinel);
