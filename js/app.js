@@ -102,13 +102,22 @@ const App = {
       const html = batch.map(post => Render.postCard(post)).join('');
       if (offset === 0) {
         postsContainer.innerHTML = html;
-                  // Append sentinel for infinite scroll
-          // Load categories after first batch
-          this.loadHomeCategories();
-        const sentinel = document.createElement('div');
-        sentinel.id = 'infinite-sentinel';
-        postsContainer.parentElement.appendChild(sentinel);
-        initObserver(sentinel);
+        // Load categories after first batch
+        this.loadHomeCategories();
+        // If there are more posts, add a Load More button
+        if (allPosts.length > BATCH_SIZE) {
+          const loadMoreBtn = document.createElement('button');
+          loadMoreBtn.textContent = 'Cargar más artículos';
+          loadMoreBtn.className = 'btn btn--primary';
+          loadMoreBtn.id = 'load-more-btn';
+          loadMoreBtn.addEventListener('click', () => {
+            renderBatch();
+            if (offset >= allPosts.length) {
+              loadMoreBtn.remove();
+            }
+          });
+          postsContainer.parentElement.appendChild(loadMoreBtn);
+        }
       } else {
         postsContainer.insertAdjacentHTML('beforeend', html);
       }
