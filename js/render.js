@@ -35,7 +35,7 @@ const Render = {
     const desc = product.descripcionCorta || 'Descubre este producto en Amazon.';
 
     return `
-      <div class="amazon-product">
+      <div class="amazon-product fade-in-up">
         <img src="${imageUrl}" alt="${title}" loading="lazy">
         <div class="amazon-product__info">
           <h4 class="amazon-product__title">${title}</h4>

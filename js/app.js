@@ -125,7 +125,19 @@ const App = {
       let amazonHtml = '';
       const productos = post.amazon || post.productosAmazon;
       if (productos && productos.length > 0) {
-        amazonHtml = `<h3>Productos Recomendados</h3>` + productos.map(p => Render.amazonProduct(p)).join('');
+        const sorted = productos.slice().sort((a, b) => {
+          const aTitle = a.titulo || a.nombre || '';
+          const bTitle = b.titulo || b.nombre || '';
+          return aTitle.localeCompare(bTitle);
+        });
+        amazonHtml = `
+          <section class="amazon-section">
+            <h3>Productos Recomendados</h3>
+            <div class="amazon-grid">
+              ${sorted.map(p => Render.amazonProduct(p)).join('')}
+            </div>
+          </section>
+        `;
       }
 
       contentContainer.innerHTML = `

@@ -22,16 +22,24 @@
 }
 
 /* Cards */
-.card {
-  background-color: var(--color-white);
+.amazon-section {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  background: var(--color-bg);
   border-radius: var(--radius-md);
-  overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-  display: flex;
-  flex-direction: column;
-  content-visibility: auto;
-  contain-intrinsic-size: 350px;
+}
+
+.amazon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+/* Apply fade-in animation to amazon products */
+.amazon-product.fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
 }
 
 .card:hover {
