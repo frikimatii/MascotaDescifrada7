@@ -88,17 +88,51 @@ const App = {
     const postsContainer = document.getElementById('latest-posts');
     if (!postsContainer) return;
 
-    // Show skeletons
+    // Show skeletons while loading
     postsContainer.innerHTML = Array(6).fill(Render.skeletonCard()).join('');
 
-    const posts = await API.getPostsIndex();
-    postsContainer.innerHTML = posts.map(post => Render.postCard(post)).join('');
+    const allPosts = await API.getPostsIndex();
+    const BATCH_SIZE = 20;
+    let offset = 0;
 
-    const categoriesContainer = document.getElementById('home-categories');
-    if (categoriesContainer) {
-      const categories = await API.getCategories();
-      categoriesContainer.innerHTML = categories.map(cat => Render.categoryPill(cat)).join('');
-    }
+    const renderBatch = () => {
+      const batch = allPosts.slice(offset, offset + BATCH_SIZE);
+      const html = batch.map(post => Render.postCard(post)).join('');
+      // If first batch, replace skeletons, else append
+      if (offset === 0) {
+        postsContainer.innerHTML = html;
+      } else {
+        postsContainer.insertAdjacentHTML('beforeend', html);
+      }
+      offset += BATCH_SIZE;
+      // Show or hide Load More button
+      if (offset < allPosts.length) {
+        showLoadMore();
+      } else {
+        hideLoadMore();
+      }
+    };
+
+    const showLoadMore = () => {
+      let btn = document.getElementById('load-more-btn');
+      if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'load-more-btn';
+        btn.textContent = 'Ver más artículos';
+        btn.className = 'btn btn--primary load-more-btn';
+        btn.addEventListener('click', renderBatch);
+        postsContainer.parentElement.appendChild(btn);
+      }
+      btn.style.display = 'block';
+    };
+
+    const hideLoadMore = () => {
+      const btn = document.getElementById('load-more-btn');
+      if (btn) btn.style.display = 'none';
+    };
+
+    // Initial render
+    renderBatch();
   },
 
   async loadArticlePage() {
