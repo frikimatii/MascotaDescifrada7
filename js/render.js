@@ -5,7 +5,7 @@
 const Render = {
   postCard(post) {
     return `
-      <article class="card">
+      <article class="card post-card fade-in-up">
         <a href="articulo.html?slug=${post.slug}" aria-label="Leer artículo: ${post.titulo}">
           <img src="${post.imagen}" alt="${post.titulo}" class="card__image" loading="lazy" decoding="async">
         </a>

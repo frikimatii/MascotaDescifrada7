@@ -20,6 +20,8 @@ const App = {
       pageLoader = this.loadCategoryPage;
     } else if (path.includes('buscar.html')) {
       pageLoader = this.loadSearchPage;
+    } else if (path.includes('productos.html')) {
+      pageLoader = this.loadPetProductsPage;
     }
 
     await Promise.all([
@@ -229,7 +231,7 @@ const App = {
     container.innerHTML = filtered.map(post => Render.postCard(post)).join('');
   },
 
-  async loadSearchPage() {
+
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('q');
     const titleEl = document.getElementById('search-title');
@@ -251,7 +253,78 @@ const App = {
     }
 
     container.innerHTML = results.map(post => Render.postCard(post)).join('');
-  }
+  },
+   // Load categories for home page (pills)
+   async loadHomeCategories() {
+     const container = document.getElementById('home-categories');
+     if (!container) return;
+     const categories = await API.getCategories();
+     if (!categories || categories.length === 0) return;
+     const pillsHtml = categories.map(cat => Render.categoryPill(cat)).join('');
+     container.innerHTML = pillsHtml;
+   },
+
+   // Load pet products page (productos.html)
+   async loadPetProductsPage() {
+     const container = document.getElementById('pet-products');
+     if (!container) return;
+     const allPosts = await API.getPostsIndex();
+     const petCategories = ['Perro', 'Gato', 'Conejo', 'Hámster'];
+     const grouped = {};
+     petCategories.forEach(cat => { grouped[cat] = []; });
+     allPosts.forEach(post => {
+       const productos = post.amazon || post.productosAmazon;
+       if (productos && productos.length) {
+         const postCat = post.categoria || '';
+         petCategories.forEach(pc => {
+           if (postCat.toLowerCase().includes(pc.toLowerCase())) {
+             grouped[pc].push(...productos);
+           }
+         });
+       }
+     });
+     let html = '';
+     petCategories.forEach(pc => {
+       const items = grouped[pc];
+       if (items && items.length) {
+         const sorted = items.slice().sort((a, b) => {
+           const aTitle = a.titulo || a.nombre || '';
+           const bTitle = b.titulo || b.nombre || '';
+           return aTitle.localeCompare(bTitle);
+         });
+         html += `
+           <section class="pet-category-section">
+             <h2>${pc}</h2>
+             <div class="amazon-grid">
+               ${sorted.map(p => Render.amazonProduct(p)).join('')}
+             </div>
+           </section>
+         `;
+       }
+     });
+     container.innerHTML = html;
+
+     // Setup tabs navigation
+     const tabsContainer = document.getElementById('pet-tabs');
+     if (tabsContainer) {
+       const tabsHtml = petCategories.map(pc => `<button class="pet-tab" data-cat="${pc}">${pc}</button>`).join('');
+       tabsContainer.innerHTML = tabsHtml;
+       const buttons = tabsContainer.querySelectorAll('.pet-tab');
+       const sections = container.querySelectorAll('.pet-category-section');
+       const showCategory = (cat) => {
+         sections.forEach(sec => {
+           sec.style.display = sec.querySelector('h2').textContent === cat ? 'block' : 'none';
+         });
+         buttons.forEach(btn => {
+           btn.classList.toggle('active', btn.dataset.cat === cat);
+         });
+       };
+       buttons.forEach(btn => {
+         btn.addEventListener('click', () => showCategory(btn.dataset.cat));
+       });
+       if (buttons.length) showCategory(buttons[0].dataset.cat);
+     }
+   }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
