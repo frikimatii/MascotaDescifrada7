@@ -190,3 +190,20 @@
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 }
+
+/* Pet Products Tabs */
+.pet-tab {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background: #eee;
+  border: none;
+  border-radius: var(--radius-pill);
+}
+.pet-tab.active {
+  background: #333;
+  color: #fff;
+}
+.pet-category-section {
+  display: none;
+}

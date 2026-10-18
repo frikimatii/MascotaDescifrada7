@@ -232,28 +232,30 @@ const App = {
   },
 
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const query = urlParams.get('q');
-    const titleEl = document.getElementById('search-title');
-    const container = document.getElementById('search-results');
+    async loadSearchPage() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        const titleEl = document.getElementById('search-title');
+        const container = document.getElementById('search-results');
 
-    if (!query || !titleEl || !container) return;
+        if (!query || !titleEl || !container) return;
 
-    titleEl.textContent = `Resultados para: "${query}"`;
-    SEO.updateMeta({ titulo: `Buscar: ${query}`, descripcion: `Resultados de búsqueda para ${query}`, imagen: '' }, window.location.href);
+        titleEl.textContent = `Resultados para: "${query}"`;
+        SEO.updateMeta({ titulo: `Buscar: ${query}`, descripcion: `Resultados de búsqueda para ${query}`, imagen: '' }, window.location.href);
 
-    // Show skeleton
-    container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
+        // Show skeleton
+        container.innerHTML = Array(3).fill(Render.skeletonCard()).join('');
 
-    const results = await Search.performSearch(query);
+        const results = await Search.performSearch(query);
 
-    if (results.length === 0) {
-      container.innerHTML = '<p>No se encontraron resultados. Intenta con otra palabra.</p>';
-      return;
-    }
+        if (results.length === 0) {
+            container.innerHTML = '<p>No se encontraron resultados. Intenta con otra palabra.</p>';
+            return;
+        }
 
-    container.innerHTML = results.map(post => Render.postCard(post)).join('');
-  },
+        container.innerHTML = results.map(post => Render.postCard(post)).join('');
+    },
+
    // Load categories for home page (pills)
    async loadHomeCategories() {
      const container = document.getElementById('home-categories');
