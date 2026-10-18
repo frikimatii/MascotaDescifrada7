@@ -98,37 +98,32 @@ const App = {
     const renderBatch = () => {
       const batch = allPosts.slice(offset, offset + BATCH_SIZE);
       const html = batch.map(post => Render.postCard(post)).join('');
-      // If first batch, replace skeletons, else append
       if (offset === 0) {
         postsContainer.innerHTML = html;
+        // Append sentinel for infinite scroll
+        const sentinel = document.createElement('div');
+        sentinel.id = 'infinite-sentinel';
+        postsContainer.parentElement.appendChild(sentinel);
+        initObserver(sentinel);
       } else {
         postsContainer.insertAdjacentHTML('beforeend', html);
       }
       offset += BATCH_SIZE;
-      // Show or hide Load More button
-      if (offset < allPosts.length) {
-        showLoadMore();
-      } else {
-        hideLoadMore();
-      }
     };
 
-    const showLoadMore = () => {
-      let btn = document.getElementById('load-more-btn');
-      if (!btn) {
-        btn = document.createElement('button');
-        btn.id = 'load-more-btn';
-        btn.textContent = 'Ver más artículos';
-        btn.className = 'btn btn--primary load-more-btn';
-        btn.addEventListener('click', renderBatch);
-        postsContainer.parentElement.appendChild(btn);
-      }
-      btn.style.display = 'block';
-    };
-
-    const hideLoadMore = () => {
-      const btn = document.getElementById('load-more-btn');
-      if (btn) btn.style.display = 'none';
+    const initObserver = (sentinel) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && offset < allPosts.length) {
+            renderBatch();
+            if (offset >= allPosts.length) {
+              observer.unobserve(sentinel);
+              sentinel.remove();
+            }
+          }
+        });
+      }, { root: null, rootMargin: '200px' });
+      observer.observe(sentinel);
     };
 
     // Initial render
